@@ -14,21 +14,29 @@ header {
 }
 
 nav {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
   background: transparent;
-  height: 100px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.leftNav {
+  width: 60vw;
   display: flex;
   flex-flow: row wrap;
   place-content: center space-around;
 }
-
-/*.rightNav {     NEEED TO FIX
-  align-items: flex-end;
+.rightNav {
+  width: 15vw;
   display: flex;
-}*/
+  justify-content: space-around;
+  align-items: center;
+}
 
 nav a {
+  padding-left: 80px;
+  font-size: 40px;
   font-family: "Courier New", Courier, monospace;
   color: white;
   text-decoration: none;
@@ -37,6 +45,18 @@ nav a {
 nav a:hover {
   text-decoration: underline;
   text-shadow: rgb(244, 244, 94) 0 0 30px;
+}
+nav button {
+  background-image: url(./images/preferences.png);
+  background-size: cover;
+  background-color: transparent;
+  border: 0;
+  width: 80px;
+  height: 80px;
+}
+
+nav button:hover {
+  box-shadow: rgb(244, 244, 94) 0 0 30px, rgb(244, 244, 94) 0 0 -30px;
 }
 
 main {
@@ -49,14 +69,24 @@ main {
   background-size: cover;
 }
 
-#frog {
+.moon {
+  background-image: url(./images/moon-4k-full-moon-over-forest-cval4u1dyiy223ch.jpg);
+}
+.pluto {
+  background-image: url(./images/brown-surface-of-pluto-lm0v4ten2kvzuzc5.jpg);
+}
+.tree {
+  background-image: url(./images/AstroTree.jpg);
+}
+
+.frog {
   background-image: url(./images/frog\ astro.jpg);
 }
 
-#dog {
+.dog {
   background-image: url(./images/dogAstro.jpg);
 }
 
-#tree {
-  background-image: url(./images/portrait-astronaut-space-suit-doing-common-activity-outdoors.jpg);
+.cat {
+  background-image: url(./images/cat_colorful_background_art_4k_desktop_pc_by_anidrawnet_dgykxa7.jpg);
 }
